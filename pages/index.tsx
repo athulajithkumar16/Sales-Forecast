@@ -1,9 +1,21 @@
-import { Button, Group } from "@mantine/core";
+import { Button, Center, Group, Stack } from "@mantine/core";
+import { FileUploader } from "../components/FileUploader/FileUploader";
 
 export default function IndexPage() {
   return (
-    <Group mt={50} justify="center">
-      <Button size="xl">Welcome to Mantine!</Button>
-    </Group>
+    <Center
+
+      h={'100%'}
+
+    >
+      <Stack
+        maw={900}
+      >
+        <FileUploader />
+        <Button>
+          Submit
+        </Button>
+      </Stack>
+    </Center>
   );
 }
